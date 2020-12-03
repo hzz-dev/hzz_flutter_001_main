@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import 'model/post.dart';
+// import 'model/post.dart';
+// import 'demo/listview_demo.dart';
+// import 'demo/hello_demo.dart';
+// import 'demo/home_basic.dart';
+import 'demo/home_customtabbar.dart';
 
 // void main() {
 //   runApp(App());
@@ -16,74 +20,15 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
+      // 关掉debug
+      debugShowCheckedModeBanner: false,
       home: Home(),
       // 设置主题颜色
-      theme: ThemeData(primaryColor: Colors.yellow),
-    );
-  }
-}
-
-class Home extends StatelessWidget {
-  Widget _listItemBuilder(BuildContext context, int index) {
-    return Container(
-      color: Colors.white,
-      margin: EdgeInsets.all(8.0),
-      child: Column(
-        children: <Widget>[
-          Image.network(posts[index].imageUrl),
-          // 下面留控件
-          SizedBox(height: 16.0),
-          Text(
-            posts[index].title,
-            // Theme.of设置文字主题
-            style: Theme.of(context).textTheme.title,
-          ),
-          Text(
-            posts[index].title,
-            // Theme.of设置文字主题
-            style: Theme.of(context).textTheme.subhead,
-          ),
-          SizedBox(height: 16.0),
-        ],
-      ),
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    return Scaffold(
-        // 设置页面背景
-        backgroundColor: Colors.grey[100],
-        appBar: AppBar(
-          title: Text('MaterialApp'),
-          // 设置阴影
-          elevation: 30.0,
-        ),
-        /*
-         ListView列表控件
-         itemCount item数量
-         itemBuilder 渲染视图
-        */
-        body: ListView.builder(
-          itemCount: posts.length,
-          itemBuilder: _listItemBuilder,
-        ));
-  }
-}
-
-class Hello extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Text(
-        'hello',
-        textDirection: TextDirection.ltr,
-        style: TextStyle(
-          fontSize: 40,
-          fontWeight: FontWeight.bold,
-          color: Colors.green,
-        ),
+      theme: ThemeData(
+        primaryColor: Colors.deepPurple,
+        // 点击按钮选择时的水波纹效果
+        highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
+        splashColor: Colors.white10,
       ),
     );
   }
