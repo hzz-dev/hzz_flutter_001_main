@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
-class BasicWidget extends StatelessWidget {}
+class BasicWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return ContainerDemo();
+  }
+}
 
 class ContainerDemo extends StatelessWidget {
   @override
