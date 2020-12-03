@@ -3,6 +3,7 @@ import 'package:hzz_flutter_001_main/baseic_widget_layout_demo/basic_layout.dart
 import '../demo/listview_demo.dart';
 import '../demo/bottom_navigation_bar_demo.dart';
 import '../baseic_widget_layout_demo/basic_widget.dart';
+import '../baseic_widget_layout_demo/basic_view.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -12,7 +13,7 @@ class Home extends StatelessWidget {
       DefaultTabController 定义tabbar
     */
     return DefaultTabController(
-      length: 3,
+      length: 4,
       child: Scaffold(
           // 设置页面背景
           backgroundColor: Colors.grey[100],
@@ -53,6 +54,7 @@ class Home extends StatelessWidget {
                 Tab(icon: Icon(Icons.local_florist)),
                 Tab(icon: Icon(Icons.change_history)),
                 Tab(icon: Icon(Icons.directions_bike)),
+                Tab(icon: Icon(Icons.view_quilt)),
               ],
             ),
           ),
@@ -83,6 +85,7 @@ class Home extends StatelessWidget {
               //   color: Colors.black12,
               // )
               LayoutDemo(),
+              ViewDemo(),
             ],
           ),
 
