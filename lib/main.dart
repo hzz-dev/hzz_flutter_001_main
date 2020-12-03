@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 // import 'demo/home_basic.dart';
 import 'demo/home_customtabbar.dart';
 
+import 'baseic_widget_layout_demo/basic_sliver.dart';
+
 // void main() {
 //   runApp(App());
 // }
@@ -22,7 +24,8 @@ class App extends StatelessWidget {
     return MaterialApp(
       // 关掉debug
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: SliverDemo(),
+      // Home(),
       // 设置主题颜色
       theme: ThemeData(
         primaryColor: Colors.deepPurple,
