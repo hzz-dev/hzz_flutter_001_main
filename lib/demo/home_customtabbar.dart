@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../demo/listview_demo.dart';
 import '../demo/bottom_navigation_bar_demo.dart';
+import '../baseic_widget_demo/basic_widget.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -69,11 +70,12 @@ class Home extends StatelessWidget {
               //   color: Colors.black12,
               // ),
               ListViewDemo(),
-              Icon(
-                Icons.change_history,
-                size: 128.0,
-                color: Colors.black12,
-              ),
+              // Icon(
+              //   Icons.change_history,
+              //   size: 128.0,
+              //   color: Colors.black12,
+              // ),
+              BasicWidget(),
               Icon(
                 Icons.directions_bike,
                 size: 128.0,
