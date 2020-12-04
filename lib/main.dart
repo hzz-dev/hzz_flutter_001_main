@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'demo/home_customtabbar.dart';
 
 import 'baseic_widget_layout_demo/basic_sliver.dart';
+import 'baseic_widget_layout_demo/basic_navigator.dart';
 
 // void main() {
 //   runApp(App());
@@ -24,9 +25,16 @@ class App extends StatelessWidget {
     return MaterialApp(
       // 关掉debug
       debugShowCheckedModeBanner: false,
-      home: SliverDemo(),
+      // home: NavigatorDemo(),
+      // SliverDemo(),
       // Home(),
       // 设置主题颜色
+
+      initialRoute: '/',
+      routes: {
+        '/': (context) => Home(),
+        '/about': (context) => Pagepush(title: 'About'),
+      },
       theme: ThemeData(
         primaryColor: Colors.deepPurple,
         // 点击按钮选择时的水波纹效果
