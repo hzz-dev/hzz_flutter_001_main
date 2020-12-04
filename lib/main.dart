@@ -9,6 +9,7 @@ import 'baseic_widget_layout_demo/basic_sliver.dart';
 import 'baseic_widget_layout_demo/basic_navigator.dart';
 import 'demo/from_demo.dart';
 import 'demo/material_components.dart';
+import 'demo/state/state_management_demo.dart';
 
 // void main() {
 //   runApp(App());
@@ -32,12 +33,13 @@ class App extends StatelessWidget {
       // Home(),
       // 设置主题颜色
 
-      initialRoute: '/mdc',
+      initialRoute: '/state-management',
       routes: {
         '/': (context) => Home(),
         '/about': (context) => Pagepush(title: 'About'),
         '/form': (context) => FormDemo(),
         '/mdc': (context) => MaterialComponents(),
+        '/state-management': (context) => StateManagementDemo(),
       },
       theme: ThemeData(
         primaryColor: Colors.deepPurple,
