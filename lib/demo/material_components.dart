@@ -8,6 +8,16 @@ import 'material_componets/radio_demo.dart';
 import 'material_componets/switch_demo.dart';
 import 'material_componets/slider_demo.dart';
 import 'material_componets/datetime_demo.dart';
+import 'material_componets/simple_dialog_demo.dart';
+import 'material_componets/alert_dialog_demo.dart';
+import 'material_componets/bottom_sheet_demo.dart';
+import 'material_componets/snack_bar_demo.dart';
+import 'material_componets/expansion_panel_demo.dart';
+import 'material_componets/chip_demo.dart';
+import 'material_componets/data_table_demo.dart';
+import 'material_componets/paginated_data_table_demo.dart';
+import 'material_componets/card_demo.dart';
+import 'material_componets/stepper_demo.dart';
 
 class MaterialComponents extends StatelessWidget {
   @override
@@ -19,6 +29,17 @@ class MaterialComponents extends StatelessWidget {
         ),
         body: ListView(
           children: <Widget>[
+            ListItem(title: 'Stepper', page: StepperDemo()),
+            ListItem(title: 'Card', page: CardDemo()),
+            ListItem(
+                title: 'PaginatedDataTable', page: PaginatedDataTableDemo()),
+            ListItem(title: 'DataTable', page: DataTableDemo()),
+            ListItem(title: 'Chip', page: ChipDemo()),
+            ListItem(title: 'ExpansionPanel', page: ExpansionPanelDemo()),
+            ListItem(title: 'SnackBar', page: SnackBarDemo()),
+            ListItem(title: 'BottomSheet', page: BottomSheetDemo()),
+            ListItem(title: 'AlertDialog', page: AlertDialogDemo()),
+            ListItem(title: 'SimpleDialog', page: SimpleDialogDemo()),
             ListItem(title: 'Date & Time', page: DateTimeDemo()),
             ListItem(title: 'Slider', page: SliderDemo()),
             ListItem(title: 'Switch', page: SwitchDemo()),
