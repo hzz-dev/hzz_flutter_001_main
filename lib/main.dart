@@ -11,6 +11,7 @@ import 'demo/from_demo.dart';
 import 'demo/material_components.dart';
 import 'demo/state/state_management_demo.dart';
 import 'demo/stream/stream_demo.dart';
+import 'demo/redart/rxdart_demo.dart';
 
 // void main() {
 //   runApp(App());
@@ -34,7 +35,7 @@ class App extends StatelessWidget {
       // Home(),
       // 设置主题颜色
 
-      initialRoute: '/stream',
+      initialRoute: '/rxdart',
       routes: {
         '/': (context) => Home(),
         '/about': (context) => Pagepush(title: 'About'),
@@ -42,6 +43,7 @@ class App extends StatelessWidget {
         '/mdc': (context) => MaterialComponents(),
         '/state-management': (context) => StateManagementDemo(),
         '/stream': (context) => StreamDemo(),
+        '/rxdart': (context) => RxDartDemo(),
       },
       theme: ThemeData(
         primaryColor: Colors.deepPurple,
